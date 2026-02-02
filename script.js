@@ -28,7 +28,7 @@ container.addEventListener("mousemove", (e) => {
 
 noBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  noBtn.innerText = "Not possible 💅";
+  noBtn.innerText = "Not possible 😑";
   moveNo();
 });
 
