@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>My Love 💖</h1>
+    <p style="font-size:16px;">
+      I know I may have hurt you, and for that I am truly sorry.<br><br>
+      You mean more to me than I can ever put into words.
+      Every smile of yours, every little thing you do,
+      is something I cherish deeply.<br><br>
+      I promise to try harder, love you better,
+      and never take you for granted again.<br><br>
+      Thank you for choosing me. Always. ❤️
+    </p>
+  </div>
+
+  <script>
+    // hearts explosion
+    for (let i = 0; i < 40; i++) {
+      const heart = document.createElement("div");
+      heart.innerHTML = "❤";
+      heart.style.position = "fixed";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.top = Math.random() * 100 + "vh";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      heart.style.color = "rgba(255,255,255,0.8)";
+      heart.style.animation = "explode 2.5s ease-out forwards";
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 2500);
+    }
+  </script>
+
+  <style>
+    @keyframes explode {
+      from { transform: scale(0.5); opacity: 1; }
+      to { transform: translateY(-120px) scale(1.5); opacity: 0; }
+    }
+  </style>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px);
+  padding: 45px;
+  border-radius: 28px;
+  box-shadow: 0 25px 55px rgba(0,0,0,0.18);
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #b5179e;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+
+.buttons {
+  position: relative;
+  height: 120px;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+#yesBtn {
+  padding: 14px 34px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #ff758f, #ff4d6d);
+  color: white;
+  box-shadow: 0 10px 22px rgba(255, 77, 109, 0.45);
+}
+
+#noBtn {
+  position: absolute;
+  right: 0;
+  padding: 8px 18px;
+  font-size: 14px;
+  background: rgba(255,255,255,0.65);
+  color: #666;
+  border-radius: 22px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.message {
+  display: none;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #b5179e;
+}
